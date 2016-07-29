@@ -22,21 +22,51 @@ function initAnalog() {
     }
   }
 }
-//inicializo el reloj analogico
+clocktype.addEventListener('change',changeClock);
+
 function changeClock(){
   var type = clocktype.options[clocktype.selectedIndex].text;
-  alert(type);
+  var analogo = document.getElementById("analogo");
+  var digital = document.getElementById("digital");
+  var hr = document.getElementById("hr");
+  var mn = document.getElementById("mn");
+  var sg = document.getElementById("sg");
+  var hrs = document.getElementById("hrs");
+  var min = document.getElementById("min");
 
-  if (type == "Digital") {
-    var kind = document.getElementById("clock-digital");
+  if (type == "Analog") {
+    initAnalog();
+    analogo = "";
+    hr="";
+    mn="";
+    sg="";
+    digital.className += "hidden";
+    hrs.className += "hidden";
+    min.className += "hidden";
+  }
+  else{
+    initDigital();
+    digital = "";
+    hrs="";
+    min="";
+    hr.className += "hidden";
+    mn.className += "hidden";
+    sg.className += "hidden";
+    analogo.className += "hidden";
   }
 }
-initAnalog();
-
-function initDigital{
+function initDigital(){
   var date = new Date;
-  var seconds = date.getSeconds();
-  var minutes = date.getMinutes();
-  var hours = date.getHours();
-  
+  var sec = date.getSeconds();
+  var min = date.getMinutes();
+  var hour = date.getHours();
+
+  var secdig = document.getElementById("sdig");
+  secdig.innerHTML = sec;
+  var mindig = document.getElementById("mdig");
+  mindig.innerHTML = min;
+  var hourdig = document.getElementById("hdig");
+  hourdig.innerHTML = hour;
 }
+//inicializo el reloj
+setInterval(changeClock,1000);

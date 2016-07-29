@@ -8,7 +8,7 @@
 <body>
   <h1>Actual Time Clock</h1>
 
-  <div class="analog">
+  <div class="analog" id="analogo">
   	<div class="hour hora1">1</div>
     <div class="hour hora2">2</div>
     <div class="hour hora3">3</div>
@@ -22,23 +22,23 @@
     <div class="hour hora11">11</div>
     <div class="hour hora12">12</div>
 
-		<div class="hours-container">
-			<div class="hours"></div>
+		<div class="hours-container" id="hr">
+			<div class="hours" id="hr"></div>
 		</div>
-		<div class="minutes-container">
-			<div class="minutes"></div>
+		<div class="minutes-container" id="mn">
+			<div class="minutes" id="mn"></div>
 		</div>
-		<div class="seconds-container">
-			<div class="seconds"></div>
+		<div class="seconds-container" id="sg">
+			<div class="seconds" id="sg"></div>
 		</div>
   </div>
 
-  <div class="clock-digital">
-    <div class="hour-digital">24</div>
+  <div class="clock-digital" id="digital">
+    <div class="hour-digital" id="hdig"></div>
     <div class="dots" id="hrs">:</div>
-    <div class="minute-digital">59</div>
+    <div class="minute-digital" id="mdig"></div>
     <div class="dots" id="min">:</div>
-    <div class="seconds-digital">59</div>
+    <div class="seconds-digital" id="sdig"></div>
   </div>
   <div class="footer">
     <h3>Choose your clock:</h3>

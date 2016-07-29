@@ -1,18 +1,18 @@
 .analog {
   background: #001E3A;
-  width: 500px;
-  height: 500px;
   border-radius: 50%;
   border: 3px solid red;
+  height: 500px;
   margin: 20px auto;
-  position: relative; }
+  position: relative;
+  width: 500px; }
 
 .hour {
-  height: 500px;
-  width: 10px;
-  position: absolute;
   color: white;
-  font-size: 30px; }
+  font-size: 30px;
+  height: 500px;
+  position: absolute;
+  width: 10px; }
 
 .hora1 {
   left: 240px;
@@ -132,17 +132,17 @@
   animation: rotate 60s infinite steps(60); }
 
 .clock-digital {
-  position: relative;
   height: 250px;
-  margin: 20px auto; }
+  margin: 20px auto;
+  position: relative; }
 
 .hour-digital,
 .minute-digital,
 .seconds-digital,
 .dots {
+  font-size: 100px;
   position: absolute;
-  top: 35%;
-  font-size: 200px; }
+  top: 35%; }
 
 .hour-digital {
   left: 0; }
@@ -161,3 +161,6 @@
 
 .footer {
   margin-top: 20px; }
+
+.hidden {
+  display: none; }
