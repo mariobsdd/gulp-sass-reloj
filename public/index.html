@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Hora Actual</title>
+
+</head>
+<body>
+  <h1>Actual Time Clock</h1>
+
+  <div class="analog">
+  	<div class="hour hora1">1</div>
+    <div class="hour hora2">2</div>
+    <div class="hour hora3">3</div>
+    <div class="hour hora4">4</div>
+  	<div class="hour hora5">5</div>
+  	<div class="hour hora6">6</div>
+  	<div class="hour hora7">7</div>
+  	<div class="hour hora8">8</div>
+  	<div class="hour hora9">9</div>
+  	<div class="hour hora10">10</div>
+    <div class="hour hora11">11</div>
+    <div class="hour hora12">12</div>
+
+		<div class="hours-container">
+			<div class="hours"></div>
+		</div>
+		<div class="minutes-container">
+			<div class="minutes"></div>
+		</div>
+		<div class="seconds-container">
+			<div class="seconds"></div>
+		</div>
+  </div>
+
+  <div class="clock-digital">
+    <div class="hour-digital">24</div>
+    <div class="dots" id="hrs">:</div>
+    <div class="minute-digital">59</div>
+    <div class="dots" id="min">:</div>
+    <div class="seconds-digital">59</div>
+  </div>
+  <div class="footer">
+    <h3>Choose your clock:</h3>
+  </div>
+
+  <select id="clock-type">
+	  <option value="analog">Analog</option>
+	  <option value="digital">Digital</option>
+	</select>
+
+  <script src="scripts/app.js"></script>
+
+</body>
+</html>

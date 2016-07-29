@@ -1,0 +1,163 @@
+.analog {
+  background: #001E3A;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 3px solid red;
+  margin: 20px auto;
+  position: relative; }
+
+.hour {
+  height: 500px;
+  width: 10px;
+  position: absolute;
+  color: white;
+  font-size: 30px; }
+
+.hora1 {
+  left: 240px;
+  top: 0;
+  transform: rotate(30deg); }
+
+.hora2 {
+  left: 240px;
+  top: 0;
+  transform: rotate(60deg); }
+
+.hora3 {
+  left: 240px;
+  top: 0;
+  transform: rotate(90deg); }
+
+.hora4 {
+  left: 240px;
+  top: 0;
+  transform: rotate(120deg); }
+
+.hora5 {
+  left: 240px;
+  top: 0;
+  transform: rotate(150deg); }
+
+.hora6 {
+  left: 240px;
+  top: 0;
+  transform: rotate(180deg); }
+
+.hora7 {
+  left: 240px;
+  top: 0;
+  transform: rotate(210deg); }
+
+.hora8 {
+  left: 240px;
+  top: 0;
+  transform: rotate(240deg); }
+
+.hora9 {
+  left: 240px;
+  top: 0;
+  transform: rotate(270deg); }
+
+.hora10 {
+  left: 240px;
+  top: 0;
+  transform: rotate(300deg); }
+
+.hora11 {
+  left: 240px;
+  top: 0;
+  transform: rotate(330deg); }
+
+.hora12 {
+  left: 240px;
+  top: 0;
+  transform: rotate(360deg); }
+
+.hidden {
+  display: none; }
+
+.hours {
+  background: black;
+  height: 20%;
+  left: 48.5%;
+  position: absolute;
+  top: 30%;
+  transform-origin: 50% 100%;
+  width: 2.5%; }
+
+.minutes {
+  background: black;
+  height: 40%;
+  left: 49%;
+  position: absolute;
+  top: 10%;
+  transform-origin: 50% 100%;
+  width: 2%; }
+
+.seconds {
+  background: red;
+  height: 45%;
+  left: 49.5%;
+  position: absolute;
+  top: 14%;
+  transform-origin: 50% 80%;
+  width: 1%;
+  z-index: 8; }
+
+.minutes-container, .hours-container, .seconds-container {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg); } }
+
+.hours-container {
+  animation: rotate 43200s infinite linear; }
+
+.minutes-container {
+  animation: rotate 3600s infinite linear; }
+
+.seconds-container {
+  animation: rotate 60s infinite linear; }
+
+.minutes-container {
+  animation: rotate 3600s infinite steps(60); }
+
+.seconds-container {
+  animation: rotate 60s infinite steps(60); }
+
+.clock-digital {
+  position: relative;
+  height: 250px;
+  margin: 20px auto; }
+
+.hour-digital,
+.minute-digital,
+.seconds-digital,
+.dots {
+  position: absolute;
+  top: 35%;
+  font-size: 200px; }
+
+.hour-digital {
+  left: 0; }
+
+.minute-digital {
+  left: 35%; }
+
+.seconds-digital {
+  left: 75%; }
+
+#hrs {
+  left: 25%; }
+
+#min {
+  left: 65%; }
+
+.footer {
+  margin-top: 20px; }
