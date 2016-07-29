@@ -28,31 +28,16 @@ function changeClock(){
   var type = clocktype.options[clocktype.selectedIndex].text;
   var analogo = document.getElementById("analogo");
   var digital = document.getElementById("digital");
-  var hr = document.getElementById("hr");
-  var mn = document.getElementById("mn");
-  var sg = document.getElementById("sg");
-  var hrs = document.getElementById("hrs");
-  var min = document.getElementById("min");
 
   if (type == "Analog") {
     initAnalog();
-    analogo = "";
-    hr="";
-    mn="";
-    sg="";
-    digital.className += "hidden";
-    hrs.className += "hidden";
-    min.className += "hidden";
+    analogo.className = analogo.className.replace(" hidden","");
+    digital.className += " hidden";
   }
   else{
     initDigital();
-    digital = "";
-    hrs="";
-    min="";
-    hr.className += "hidden";
-    mn.className += "hidden";
-    sg.className += "hidden";
-    analogo.className += "hidden";
+    digital.className = digital.className.replace(" hidden","");
+    analogo.className += " hidden";
   }
 }
 function initDigital(){
@@ -69,4 +54,5 @@ function initDigital(){
   hourdig.innerHTML = hour;
 }
 //inicializo el reloj
+//changeClock();
 setInterval(changeClock,1000);
